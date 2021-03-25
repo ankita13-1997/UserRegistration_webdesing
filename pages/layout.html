@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+
+    
+    
+      <meta charset="utf-8">
+      <link rel ="shortcut icon" href="../assets/fav.png">
+      <title> MY test Pasges  </title> 
+      <style>
+        body
+        {
+          padding: 2em;
+        }
+
+        .headerContainer
+        {
+          display: flex;
+          flex-flow: column wrap;
+          align-content: center;
+          background-color: tomato;
+          font-weight: bold;
+          padding:10px;
+        }
+
+        .footerContainer
+        {
+          display: flex;
+          flex-flow: column wrap;
+          align-content:center;
+          background: lightgreen;
+          font-weight: bold;
+          padding: 10px;
+        }
+        
+        .mainContainer
+        {
+           display: flex;
+           flex-flow: row wrap;
+           font-weight: bold;
+           text-align: center;
+        }
+
+        .mainContaintitem
+        {
+          text-align: left;
+          background:deepskyblue;
+        }
+
+        h3{
+            font-size: 15px;
+            text-align: center;
+        }
+  
+        h3{
+            margin: 0;
+            padding: 20px 0;
+            color:black;
+            
+        }
+        article
+        {
+          padding: 10px;
+          margin: 10px;
+          background: aqua;
+        }
+        
+        .sideBarLeftItem{background:goldenrod;}
+        
+        .sideBarRightItem{background: hotpink;}
+       
+        .sideBarItem{flex :1 0 0; border:5px;}
+
+         .mainContaintitem
+         {
+            flex : 3 0px;
+         }
+         .sideBarLeftItem
+         {
+            order: 1;
+         }
+          
+         .mainContaintitem
+         {
+            order: 2;
+         }
+         .sideBarRightItem
+         {
+           order : 3;
+         }
+
+      </style>
+  </head>
+
+ <body>
+     <header class = "headerContainer">Main topic</header>
+     <div class="mainContainer">
+       <section class="mainContaintitem">
+         <article>
+           <h2>First container</h2>
+           <p><h3>Hello this websites twlls lot about sea food ,Seafood is any 
+             form of sea life regarded as food by humans, prominently including 
+             fish and shellfish. Shellfish include various species of molluscs,
+              crustaceans, and echinoderms</h3></p>
+         </article>
+
+         <article>
+          <h2>Second Container</h2>
+          <p></p><h3>European cuisine comprises the cuisines of Europe including
+             the cuisines brought to other countries by European settlers 
+             and colonists. Sometimes the term "European", or more specifically 
+             "continental" cuisine, is used to refer more strictly 
+             to the cuisine of the western parts of mainland Europe</h3></p>
+        </article>
+
+        <article>
+          <h2>Third Container</h2>
+          <p><h3>Indian cuisine consists of a variety of regional and traditional 
+            cuisines native to the Indian subcontinent. Given the diversity
+             in soil, climate, culture, ethnic groups, and occupations, these 
+             cuisines vary substantially and use locally available spices, 
+             herbs, vegetables, and fruits</h3></p> 
+
+        </article>
+       </section>
+       <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>LEFT SIDE BAR</p></div></sideBar>
+       <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>RIGHT SIDE BAR</p></div></sideBar>
+      
+     </div>
+     
+     <footer class="footerContainer">Footer</Footer>
+      
+      
+ </body>
+   
+
+</html>      

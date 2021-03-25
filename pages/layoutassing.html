@@ -1,0 +1,178 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel ="shortcut icon" href="../assets/fav.png">
+        <title>EXAMPLE</title>
+
+        <style>
+          *{
+              body-siziing:border-box;
+           }
+
+           body
+           {
+               display: flex;
+               min-height: 100vh;
+               flex-direction: row;
+               margin: 0;
+           }
+         
+           .outerCol1
+           {
+               background: gray;
+               flex: 1;
+
+           }
+
+           .outerCol2
+           {
+               display: flex;
+               flex-direction: column;
+               flex: 5;
+           }
+
+           .inner-row
+           {
+               display: flex;
+               flex-direction: row;
+
+           }
+
+           .inner-coloumn
+           {
+               flex: 4;
+           }
+           .inner-row article
+           {
+               min-height: 64vh;
+           }
+           .inner-row aside
+            {
+                background: bisque;
+                flex: 1;
+            }
+
+            header,footer{
+                background: chartreuse;
+                height: 20vh;
+            }
+
+            head,footer,article,aside{
+                padding: 1em;
+            }
+
+
+            h2 
+             {
+            font-size: 15px;
+            font-family: cursive;
+            text-align: left;
+            margin: 0;
+            padding: 10px 0;
+            color:navy;
+             } 
+             
+             h3
+             {
+                font-size: 15px;
+                text-align: left;
+                padding: 12px 0;
+                color:rgb(128, 0, 0);
+             }
+
+             .cards
+               {
+                   display: flex;
+                   flex-wrap: wrap;
+                   align-items: flex-start;
+                   flex-direction: row;
+                   
+               }
+               .cards img
+                {
+                    margin: 10px;
+                    border: 3px solid black;
+                    max-width: 10vw;
+                    max-height: 100vh;
+                }
+
+                .cards image
+                {
+                    margin: 10px;
+                    border: 3px solid black;
+                    max-width: 10vw;
+                    max-height: 90vh;
+                }
+               
+                .media {
+                   display: flex;
+                   align-items: flex-start;
+                   background: #F6F3EB;
+                   padding: 1em;
+                   border-radius: 3px;
+                   max-width: 24em;
+                      }
+                .media-object {
+                    margin-right: .4em;
+                    font-size: 4em;
+                         }
+                 .media-body {
+                      flex: 1;
+                           }
+        </style>
+
+       
+    </head>
+  
+
+    <body>
+     <nav class="outerCol1"><h1>MENU</h1>
+        <h3>1.veg thali</h3>
+        <h3>2.Non-veg thali</h3>
+        <h3>3.South Indian thali</h3>
+        <h3>4.Maharaja thali</h3>
+        
+     </nav>
+     <div class="outerCol2">
+         <header>INDIAN CUSINE</header>
+          <div class="inner-row">
+              <div class="inner-coloumn">
+                <article>
+                    <h1>SPICES ARE MUST<h2>
+                        <h2>
+                            Indian cuisine consists of a variety of regional and traditional 
+                            cuisines native to the Indian subcontinent. Given the diversity
+                             in soil, climate, culture, ethnic groups, and occupations, these 
+                             cuisines vary substantially and use locally available spices, 
+                             herbs, vegetables, and fruits
+                        </h2>
+                        <main class="cards">
+                         <img src="../assets/food.jpg" alt="Hover Text.">
+                        </main>
+                    </article>
+                 <footer>@HomemadeMasala</footer>
+              </div>
+               <aside>
+                   TODAYS SPECIAL
+                   <div class="media-object">&#x1F60E;</div>
+                   <div class="media-body">
+                       <h3>1.special rajkachori chat</h3>
+                       <main class="cards">
+                       <image src ="../assets/ka.jpeg" alt="Hover Text"></image>
+                       </main>
+                       
+                       <h3>2.premium large oreao shake 30% off</h3>
+                       <main class="cards">
+                       <image src ="../assets/shake.jpg" alt="Hover Text"></image>
+                       </main>
+                       
+               </aside>
+           </div>
+
+     </div>
+     
+
+    </body>
+   
+</html>
